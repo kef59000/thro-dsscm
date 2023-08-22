@@ -1,1 +1,1 @@
-# thro-dsscm
+# Data Science in Supply Chain Management
