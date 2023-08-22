@@ -34,3 +34,20 @@ Use the following data for this:
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
+
+- **TIP**: If you lose sight of a specific layer, you can right-click on the layer and select the "Zoom to layer" option.
+- Link the states layer to the .dbf:
+    - Right-click "states", properties, shortcuts, add shortcut (green plus). Link layers -> select the database here. Link field and target field are "STATE_FIPS". Select only "POP2004" as the linked field.
+    - If you now check the layer's attribute table (right-click -> Open attribute table), you will see that a new column has been added.
+- In the following we have to do two separate formatting tasks. Once using a gradient, once using a border. It makes sense to create two separate shapefiles for this. In the following, we therefore separate a shape called "States" and a shape called "Largest States".
+    - Right click on States layer -> Save as.
+    - Select the "Browse" field for "File name" and call up the storage path on your drive. Select "Large States" as the file name.
+    - Rename the other layer to "States" (right click on layer -> Rename).
+    - You now have two shapefiles that currently have the same content.
+- First, let's "clip" the "Largest States" layer. It should only include the three largest states:
+    - Right click on Layer -> Open attribute table
+    - Sort the states in descending order of population (click on the column header).
+    - Select the top three objects (hold down CTRL) and select the Invert Object Selection option.
+    - Click on the "Turn on editing mode" button (small pencil). Then click "Delete Selected Items" (trash can). Exit edit mode by clicking the small pen again. Save the changes.
+
+![Alt text](image-2.png)
