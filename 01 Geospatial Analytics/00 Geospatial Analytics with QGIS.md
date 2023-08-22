@@ -16,3 +16,21 @@ A few hints should be given for your further work with QGIS:
 - Search for freely available data and discover the potential of QGIS!
 - The QGIS community is very active: you can almost always find an answer to your question by searching the web.
 - QGIS has many plugins: There may be a plugin that can help you with your specific problem! If in doubt, google your problem in English.
+
+## Task 1: North America
+
+### Problem
+In the first exercise, you will create a professional and complete map of the United States, showing the population distribution of each state. On the one hand, you should format the states according to color intensity, and on the other hand, mark the three most populous states with a red border. In addition, the states should be provided with their respective state abbreviation.
+
+Use the following data for this:
+- Path: Exercise 1
+    - States.shp
+    - States_demog.dbf
+
+### Walkthrough
+- Copy the data set to your personal drive. Make a note of the storage path. Open QGIS.
+- Load the above data into QGIS.
+- Change the coordinate reference system of the project  and the states layer to EPSG:4269.
+
+![Alt text](image.png)
+![Alt text](image-1.png)
