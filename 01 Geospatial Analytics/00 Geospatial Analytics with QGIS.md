@@ -82,7 +82,6 @@ Use the following data for this:
     - Next, add a scale via "Arrange". Play around with the formatting options under Element Properties. Try to create appropriate scale bar formatting. Add a scale bar to the small map as well – click on the small map under "Elements" and add the scale bar via "Arrangement".
     - Finally, the map needs a north arrow. Select the "Add picture" function via "Arrangement" and open a small frame. Under "Element properties" open the "Browse directories" tab – select a discreet north arrow.
     - Finally, we must indicate the sources used. To do this, create a label field again and add the source reference "Source: Data from the University of Regensburg".
-- You can export your map via the menu bar under "Composition" (e.g., as a PDF or as a PNG via "Save as raster image").
 
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
@@ -91,6 +90,9 @@ Use the following data for this:
 ![Alt text](image-10.png)
 ![Alt text](image-11.png)
 ![Alt text](image-12.png)
+
+- You can export your map via the menu bar under "Composition" (e.g., as a PDF or as a PNG via "Save as raster image").
+
 ![Alt text](image-13.png)
 
 ### Solution
