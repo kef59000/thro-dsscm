@@ -52,7 +52,7 @@ Use the following data for this:
 
 ![Alt text](image-2.png)
 
-- Make sure the "Most Populous States" layer is on top of the "States" layer in your Layers win-dow. Otherwise, drag and drop it up. Format it as a transparent layer with a thick red border:
+- Make sure the "Most Populous States" layer is on top of the "States" layer in your Layers window. Otherwise, drag and drop it up. Format it as a transparent layer with a thick red border:
     - Right click on Layer -> Properties -> Style.
     - Click on "Simple filling" in the upper window, then on the color bar below under Symbol layer type / Filling. In the "Choose fill color" window that appears, lower the "Opacity" slider to 0%, then confirm.
     - Further down in the window you can format the frame. Change the border color to red and increase the border strength to 1.5. Click "Apply" and then "Ok".
@@ -60,16 +60,16 @@ Use the following data for this:
     - Right click on Layer -> Properties -> Style.
     - At the top, choose Graduated instead of Single Icon.
     - For "Column" select "POP_2004". Then select a color gradient that suits you under "Color gradient".
-    - Under Mode (below the table window), select the entry "Nice Interruptions". Under "Clas-ses" on the right, select 7 classes. Click "Classify" – each object has now been assigned a color based on its population. If you click on "Apply" below, you can already see the effect in the map window.
+    - Under Mode (below the table window), select the entry "Nice Interruptions". Under "Classes" on the right, select 7 classes. Click "Classify" – each object has now been assigned a color based on its population. If you click on "Apply" below, you can already see the effect in the map window.
     - Finally, the states have to be labeled. In the properties window, click on "Labeling" and select "Label this layer" from the top menu.
     - Under "Label with" you can specify which attribute should be used for the label. Select "STATE_ABBR" and click "Apply" to test it.
-    - Format the caption however you like: The menu below gives you several options. One possibility would be to add a buffer to make the state names easier to read. A shad-ow would also be possible.
+    - Format the caption however you like: The menu below gives you several options. One possibility would be to add a buffer to make the state names easier to read. A shadow would also be possible.
 
 ![Alt text](image-3.png)
 ![Alt text](image-4.png)
 
 - Now all layers are ready for map creation. You can start creating a map. To do this, click on "Project" in the menu bar, then on "New Print Composer". For the name, select "Population distribution in the USA". The Print Composer opens (i.e., the map editor) from QGIS in a new window.
-    - Add a card title (menu bar -> Arrangement -> Add label) and place it in the middle. In the right window under "Element properties" change the content of the caption to "Population distribution in the USA (2004)". Below you can format the title. Center the title and in-crease its font size (Font button) to 24 and set it to bold.
+    - Add a card title (menu bar -> Arrangement -> Add label) and place it in the middle. In the right window under "Element properties" change the content of the caption to "Population distribution in the USA (2004)". Below you can format the title. Center the title and increase its font size (Font button) to 24 and set it to bold.
         - **Orientation**: On the right side you will find the "Elements" pane. Here you will find all the individual parts that you have added to the map. You can also navigate here – by clicking on a single element, it becomes editable. You can change it in the "Element properties" window below.
         - **Tip**: You can delete elements by selecting the "Select/move entry" button, then clicking on the element and selecting "Edit" from the menu bar and then "Delete".
     - Next, add the map (Menu bar -> Arrangement -> Add map). Drag the map window to the width of the workspace. Leave space below for sources. You can change the size afterwards by dragging the edge of the object.
@@ -101,7 +101,7 @@ Use the following data for this:
 ## Task 2: Aldi branches in Regensburg - Round trip
 
 ### Problem
-In this exercise, you should draw the location of the Regensburg Aldi branches and a fictitious regional warehouse on a map of the Regensburg city area with a suitable formatting. You would then like to measure the linear distance between the branch in the western quarter and the branch on the Galgenberg. You then want to draw an exemplary round trip between the regional warehouse and the branch-es and save it as a line layer.
+In this exercise, you should draw the location of the Regensburg Aldi branches and a fictitious regional warehouse on a map of the Regensburg city area with a suitable formatting. You would then like to measure the linear distance between the branch in the western quarter and the branch on the Galgenberg. You then want to draw an exemplary round trip between the regional warehouse and the branches and save it as a line layer.
 Use the following data for this:
 - Path: Exercise 2
     - Excel file with coordinates
@@ -111,7 +111,7 @@ Use the following data for this:
 
 ### Walkthrough
 - Create a folder on your drive for this task. Copy the required data into this folder.
-- First you have to determine the coordinates of the Aldi branches and the regional warehouse. Your colleague has already done a little preparatory work for this and determined the street ad-dresses of the branches from https://filialfinder.aldi-sued.de and saved them in an Excel file. Open the Excel sheet. He saved the coordinates in Gauss-Krüger Zone 3 format. Go to https://www.deine-berge.de/Rechner/Koordinaten/ and find out the remaining coordinates of the branches. **Caution: Format the coordinate cells in Excel in text format, otherwise the dec-imal delimitation will not be accepted!**
+- First you have to determine the coordinates of the Aldi branches and the regional warehouse. Your colleague has already done a little preparatory work for this and determined the street addresses of the branches from https://filialfinder.aldi-sued.de and saved them in an Excel file. Open the Excel sheet. He saved the coordinates in Gauss-Krüger Zone 3 format. Go to https://www.deine-berge.de/Rechner/Koordinaten/ and find out the remaining coordinates of the branches. **Caution: Format the coordinate cells in Excel in text format, otherwise the dec-imal delimitation will not be accepted!**
 - Open QGIS and open the shapefiles and layer them so that they are all visible. Bring the project and all shapefiles to the Gauss-Krüger-3 EPSG 5678 coordinate reference system.
 - Format the shapefiles according to common expectations:
     - The boroughs are white with a thin black border. Add the district name as a subtle caption.
@@ -153,7 +153,7 @@ Use the following data for this:
 
 - Finally, you would like to create a line layer with which you would like to draw an exemplary tour between the regional warehouse and all branches.
     - Menu bar – Layer – Create layer – Create shape file layer.
-    - Select "Line" and the correct coordinate reference system and click "Ok". Save the shape-file as "Tour" in your folder.
+    - Select "Line" and the correct coordinate reference system and click "Ok". Save the shapefile as "Tour" in your folder.
     - Switch on edit mode (small pen in the upper right corner) and select "Add object". Create a circular tour on the outer edges of the branch network by clicking on the individual points. End the line creation with a right click. Give the round trip the ID "1". Then switch off the editing mode and save the changes.
     - Format the round trip according to your taste. In this example, it has been formatted as a thick orange line.
 
@@ -181,7 +181,7 @@ Use the following data for this:
 
 ### Walkthrough
 - Turn off the round-trip layer from the previous exercise. The Gauss-Krüger-3 system zone 3 (EPSG 5678) is also used in this exercise.
-- To determine the number of customers in the vicinity of the branches, it is first necessary to collect more detailed information on the city's population. A colleague found a table on the website of the city of Regensburg (Regensburg Statistics) and saved it as Excel "Popula-tion_Rgb" for you.
+- To determine the number of customers in the vicinity of the branches, it is first necessary to collect more detailed information on the city's population. A colleague found a table on the website of the city of Regensburg (Regensburg Statistics) and saved it as Excel "Population_Rgb" for you.
     - Add the Excel to your project and link it to the "Districts" layer (layer properties -> Links -> Add link (green plus below) -> Target field and link field are "SBZ". The linked field is "Population").
 
 ![Alt text](image-27.png)
@@ -217,9 +217,9 @@ Use the following data for this:
 - The sizes that can be read out in the attribute table ("hectare", "population") still refer to the original size of the city districts! Since we assume that the people in the city dis-tricts are evenly distributed, we must therefore determine the absolute geometric size of the intersection and then set this in relation to the size of the city districts. The result can then be multiplied by the number of inhabitants per district.
     - Select the "City catchment area" layer and open the field calculator (toolbar).
     - Create a new field called "Size of cut area". Under "Geometry", double-click the "$area" command and execute the command. A new column was created in the attribute table, which indicates the size of the cut surface in square meters.
-    - Stay in edit mode and reopen the handheld calculator. Create a new field called "Percent Area Municipality". Set the output field type to "Decimal number (real)". If the percentage of the intersecting area is to be calculated, the size of the city districts (given in hectares) must be converted into square meters (including the quotation marks): "Size of intersect-ing area" / ("hectares" * 10000).
-    - A new column was calculated in the attribute table of the layer, which indicates the cover-age of the respective city district in percent. City districts such as Reinhausen or Weichs are completely covered. Ober-/Niederwinzer-Kager and Brandlberg-Keilberg show little coverage.
-    - Finally, the covered intersection areas must be offset against the population of the respec-tive city district. Open the field calculator again and enter "Customers Reached" as the output field name. Use integer as field type. As a command, enter: "Population_Rgb Ta-ble1_Population" * "Percentage Area Municipality".
+    - Stay in edit mode and reopen the handheld calculator. Create a new field called "Percent Area Municipality". Set the output field type to "Decimal number (real)". If the percentage of the intersecting area is to be calculated, the size of the city districts (given in hectares) must be converted into square meters (including the quotation marks): "Size of intersecting area" / ("hectares" * 10000).
+    - A new column was calculated in the attribute table of the layer, which indicates the coverage of the respective city district in percent. City districts such as Reinhausen or Weichs are completely covered. Ober-/Niederwinzer-Kager and Brandlberg-Keilberg show little coverage.
+    - Finally, the covered intersection areas must be offset against the population of the respective city district. Open the field calculator again and enter "Customers Reached" as the output field name. Use integer as field type. As a command, enter: "Population_Rgb Ta-ble1_Population" * "Percentage Area Municipality".
     - Exit edit mode and save your changes.
     - If you open the attribute table, you can now read out the number of customers reached in each individual city district.
 
@@ -230,7 +230,7 @@ Use the following data for this:
 ![Alt text](image-38.png)
 
 - Download the "Statist" extension (menu bar  Extensions).
-- Open Statist via the menu bar  Vector. Open the "City catchment area" layer and click "Ok". Now read out the summarized results of your analysis.
+- Open Statist via the menu bar -> Vector. Open the "City catchment area" layer and click "Ok". Now read out the summarized results of your analysis.
 - **Optional for self-study:**
     - Generate a professional and complete map of your results!
     - Suggest a new branch location in the Ostenviertel! Create a new point layer "New Branch" and set a coordinate of your choice in the East Quarter as the new location. Calculate how many more customers you can reach through the new branch!
@@ -265,15 +265,15 @@ Use the following data for this:
 ![Alt text](image-40.png)
 
 - The new areas to be supplied are in south-eastern Bavaria (shaded areas). It has to be found out which delivery area should be served from which regional warehouse – it should be assumed here that the decision should only be based on the shortest average distance. Furthermore, assume that the customers are evenly distributed in the delivery areas.
-- A distance matrix between all warehouses and all delivery areas should be generated for deci-sion-making. This allows a minimal distance assignment.
-- The delivery areas are "unshaped" polygons. However, fixed points are required to generate a distance matrix. In the following, these are to be set in the geographic focus of the delivery are-as.
+- A distance matrix between all warehouses and all delivery areas should be generated for decision-making. This allows a minimal distance assignment.
+- The delivery areas are "unshaped" polygons. However, fixed points are required to generate a distance matrix. In the following, these are to be set in the geographic focus of the delivery areas.
     - Open Menu Bar – Vector – Geometry Tools – Centroid. Use the delivery area layer as the input layer and click "Run".
     - A new layer "centroids" was created, which includes the centroids of the delivery areas. Format them appropriately.
 
 ![Alt text](image-41.png)
 
 - Next, the distance matrix is generated. The IDs of the warehouse locations and the community names of the delivery areas should be used as identifiers for the rows and columns.
-    - Open Menu Bar – Vector – Analysis Tools – Distance Matrix. Select the layer of the bear-ing network as the input layer. Choose ID as the unique key field. The target layer is the centroid layer. Choose GEN as the unique key field. The output matrix shall be a standard (NxT) distance matrix.
+    - Open Menu Bar – Vector – Analysis Tools – Distance Matrix. Select the layer of the bearing network as the input layer. Choose ID as the unique key field. The target layer is the centroid layer. Choose GEN as the unique key field. The output matrix shall be a standard (NxT) distance matrix.
     - Click "Run". A new "Distance Matrix" table has been created in which you can read the distances in meters. Since location 1002 (Northern Bavaria) is the furthest away from the delivery areas, you can remove it from the distance matrix (switch on edit mode, mark line, delete, switch off edit mode and save).
     - Now read out the shortest distances and make your allocation decision. The solution can be found in the sub-chapter "Solution".
 
@@ -291,7 +291,7 @@ Use the following data for this:
 ![Alt text](image-44.png)
 ![Alt text](image-45.png)
 
-- First, let's make the newly created layer transparent (60% transparency). The three center lines of the polygon represent the boundaries of the allocation. Bavaria is divided into three seg-ments: north, east, and south. The storage locations located there are those locations that are closest to this area.
+- First, let's make the newly created layer transparent (60% transparency). The three center lines of the polygon represent the boundaries of the allocation. Bavaria is divided into three segments: north, east, and south. The storage locations located there are those locations that are closest to this area.
 
 ![Alt text](image-46.png)
 
@@ -299,8 +299,8 @@ Use the following data for this:
     - Select the Voronoi layer and switch on the edit mode (small pen in the top left).
     - Choose the node tool. Double click on the outlines – this will add a new node to the edge. You pull this knot outwards to make the Voronoilayer so large that it encompasses all of Bavaria. Caution: Do not change the center lines!
     - Exit edit mode and save your changes to the Voronoilayer.
-    - Now you can intersect the Voronoi layer with the Bayern layer (Menu Bar – Vector – Geo-processing Tools – Intersect). The input layer is the Voronoi layer, the "cut layer" is the Bavaria layer.
-    - Rename the newly created layer as "Store assignment" and deactivate the Voronoilayer. Format the layer in a pleasing color and switch it to 50% transparency. Activate the label-ing of this layer and label the individual parts with the ID of the respective bearing in a legible font size (Properties  Labels  above: "Label this layer"  Label with "ID").
+    - Now you can intersect the Voronoi layer with the Bayern layer (Menu Bar – Vector – Geoprocessing Tools – Intersect). The input layer is the Voronoi layer, the "cut layer" is the Bavaria layer.
+    - Rename the newly created layer as "Store assignment" and deactivate the Voronoilayer. Format the layer in a pleasing color and switch it to 50% transparency. Activate the label-ing of this layer and label the individual parts with the ID of the respective bearing in a legible font size (Properties -> Labels -> above: "Label this layer" -> Label with "ID").
 
 ![Alt text](image-47.png)
 ![Alt text](image-48.png)
@@ -316,7 +316,7 @@ Use the following data for this:
 - PointConnector would like to find the points to be connected in a common (!) layer file. There-fore, we need to merge the Store_Layer and Warehouse_Layer. If we were to choose the Unions geoprocessing tool, the layers would be merged, but their attributes would be presented in separate columns. Since the two layers have the same formatting in their attribute tables (ID and type), we can use an alternative tool to merge them in such a way that the respective data is en-tered in the same columns.
     - Menu bar -> Vector -> Database management tools -> Merge vector layers.
     - Select the two point layers and click "Run". A new merged layer with equal attribute columns is created. Rename this layer "Goods Flow Network". Disable the separate store and warehouse layers.
-    - Label the goods flow network layer with the IDs of the nodes (right-click layer  Proper-ties  Label  above: Label this layer  Label with ID). Choose a larger font size, e.g., 16. For "Placement", increase the distance to 3.
+    - Label the goods flow network layer with the IDs of the nodes (right-click layer -> Properties -> Label -> above: Label this layer -> Label with ID). Choose a larger font size, e.g., 16. For "Placement", increase the distance to 3.
     - Format the goods flow network layer with black squares.
 
 ![Alt text](image-50.png)
@@ -337,7 +337,7 @@ Use the following data for this:
 - Now you can format the flow of goods.
     - Right click Goods flow layer – Properties – Style.
     - Select "Categorized" at the top and select "weight" as the column. Click on "Classify" below and select a suitable gradient under Color gradient.
-    - The flow of goods should also be marked as bold arrows. Under "Icon" click on "Change". In the next window, select the "Arrow" option instead of "Simple marking". Change Ar-row Width to 4, Tip Length to 3, and Tip Strength to 4. Make sure the Curved Arrows op-tion is checked. Click "Ok" and finish formatting.
+    - The flow of goods should also be marked as bold arrows. Under "Icon" click on "Change". In the next window, select the "Arrow" option instead of "Simple marking". Change Ar-row Width to 4, Tip Length to 3, and Tip Strength to 4. Make sure the Curved Arrows option is checked. Click "Ok" and finish formatting.
     - Move the "Goods flow network" layer up in the layer window so that warehouses and branches become visible.
     - Some of the arrows overlay each other unfavorably: Select the "Flow of Goods" layer and switch on the editing mode (small pencil at the top left). Select the node tool and add a new point to individual arrows by double-clicking in the middle. You can push this point outwards: the arrow bends. Bend those arrows that you find appropriate. Turn off edit mode and save your changes.
 
@@ -367,7 +367,7 @@ Use the following data for this:
 - Choosing the "right" projection...
     - ... creates a "correct" image of your map.
     - ... ensures that the data you enter ends up where it should.
-    - … is – especially for non-geographers – a typical source of problems when working with QGIS.
+    - ... is – especially for non-geographers – a typical source of problems when working with QGIS.
 - Always check which projection your project and layers have. Make sure all layers are on the same projection.
 - Work with the Gauss-Krueger transformation for the area Germany.
 - In the case of externally obtained data, check which projection they show and, if necessary, carry out a reprojection in QGIS.
