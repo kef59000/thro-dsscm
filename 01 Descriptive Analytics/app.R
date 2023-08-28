@@ -1,5 +1,5 @@
 
-setwd("/Users/kefo395/Library/CloudStorage/Dropbox/Uni/Uni Regensburg/Lehre/01 Lehrveranstaltungen/02 Master/05 BA-SCM/ba_scm")
+setwd("/Users/kefo395/coding/thro-dsscm/01 Descriptive Analytics")
 
 source('app_global.R')
 
