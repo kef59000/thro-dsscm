@@ -1,5 +1,5 @@
 
-setwd("/Users/kefo395/coding/thro-dsscm/01 Descriptive Analytics")
+setwd("/Users/kefo395/coding/thro-dsscm/01 Descriptive Analytics/02 R Shiny")
 
 source('app_global.R')
 
